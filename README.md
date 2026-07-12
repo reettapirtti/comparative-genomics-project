@@ -17,11 +17,11 @@ The data has not been included in this repository for confidentiality reasons.
 
 ## repository-contents
 
-### ~consensus gene clusters: 
+#### ~consensus-gene-clusters: 
 
 The positional organization of gene families was found to be highly conserved within subgenomes across species. In order to visualize the structural conservation and variation between A, C, and D subgenome clusters, consensus values summarizing gene order, positions, strand orientation, and gene family were generated. The consensus data was used to manually plot genes on a vertical, scaled axis in BioRender to generate nice figures. 
 
-### ~gaps and intergenic variation, statistical analysis and data handling: 
+#### ~gaps-and-intergenic-variation, statistical-analysis-and-data-handling: 
 
 While positional organization of genes was highly conserved, cluster length varied significantly both between species and between sub-genomes due to intergenic gap variation. To quantify and interpret these differences, data on intergenic gap length was collected and handled in RStudio. 
 
