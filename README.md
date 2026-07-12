@@ -11,7 +11,8 @@ The genomic regions were annotated for CBF genes in CLC Main Workbench for a tot
 
 ---
 
-##repository-contents
+## repository-contents
+
 *consensus gene clusters: 
 
 The positional organization of gene families was found to be highly conserved within subgenomes across species. In order to visualize the structural conservation and variation between A, C, and D subgenome clusters, consensus values summarizing gene order, positions, strand orientation, and gene family were generated. The consensus data was used to manually plot genes on a vertical, scaled axis in BioRender to generate nice figures. 
