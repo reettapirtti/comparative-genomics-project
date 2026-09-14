@@ -25,7 +25,9 @@ The positional organization of gene families was found to be highly conserved wi
 
 While positional organization of genes was highly conserved, cluster length varied significantly both between species and between sub-genomes due to intergenic gap variation. To quantify and interpret these differences, metadata collected on gene position, orientation, and length, was used in RStudio. Statistical analyses: Kruskal–Wallis test, pairwise Wilcoxon rank-sum tests (post hoc), Spearman's rank correlation, and descriptive statistics (mean, standard deviation, coefficient of variation, minima/maxima, totals).
 
-*copy number variation and functional retention: 
+#### ~copy number variation (CNV) and functional retention: 
+
+To determine whether gene family expansions or losses were biased among subgenomes or species, copy number variation and functional retention were quantified. The dataset for this summarized the number of functional and non-functional genes from each gene family per species per subgenome. Non-functional genes, or pseudogenes, were defined as sequences that were highly similar to their functional counterparts (<80% identity, and over <550bp in length), but their CDS was not intact. 
 
 *distribution of pseudogenes: 
 
