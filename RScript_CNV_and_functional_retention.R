@@ -4,17 +4,17 @@
 #
 # This script analyses CBF gene copy number variation and
 # functional retention across the A, C, and D subgenomes by:
-#   - summarizing and comparing functional and 
-#     non-functional gene counts across species and 
-#     subgenomes
+#   - summarizing functional and non-functional gene counts
+#     across species and subgenomes
 #   - visualizing gene copy numbers across species and 
 #     subgenomes
-#   - testing whether functional retention is associated 
-#     with subgenome identity
-#   - testing for deviations from the expected distribution
-#     of gene counts across subgenomes
-#   - examining Pearson residuals to identify subgenomes
-#     contributing to observed differences
+#   - using chi-square goodness-of-fit tests to compare gene
+#     counts among subgenomes
+#   - using chi-square tests of independence to assess
+#     associations between functional status and subgenome
+#     identity, and between functional status and gene family
+#   - examining Pearson residuals to identify contributions
+#     to observed differences
 #
 # Author: Reetta Pirttilahti
 #
