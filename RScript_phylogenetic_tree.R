@@ -12,9 +12,11 @@ library(dplyr)
 # This script creates a highlighted and labelled phylogenetic tree for easy 
 # visualization of previously identified and classified CBF gene clades. 
 # Breakdown of the steps:
-#   - import a Newick tree and gene family metadata
-#   - generate a fan-shaped phylogenetic tree
-#   - colour terminal tips according to gene family metadata
+#   - import a Newick tree generated in MEGA 12 and import gene family
+#     metadata 
+#   - generate a fan-shaped phylogenetic tree using the R package ggtree
+#   - colour terminal tips according to gene family classification 
+#     in metadata data frame  
 #   - highlight clades based on node numbers
 #   - export the final tree as a high-resolution image
 #
