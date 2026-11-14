@@ -1,14 +1,31 @@
 # ==========================================================
-# 
-# Consensus CBF Cluster Generation
+#
+# Generating Consensus CBF Cluster Architectures
 #
 # This script generates consensus CBF cluster architectures 
-# per sub-genome by calculating median gene order, positions, 
-# strand orientation, and gene family
-
+# for A, C, and D subgenomes by calculating the median gene positions, 
+# gene order, strand orientation, and the most 
+# frequently occurring gene family at each gene position 
+# across species. This is done to visualize the observed 
+# structural conservation and conservation of positional organization
+# within subgenomes. 
+#
+# Breakdown of the steps:
+#   - import cluster metadata from an Excel file
+#   - format gene identifiers and strand orientation
+#   - filter for functional CBF genes only
+#   - assign gene order based on genomic position within each cluster
+#   - calculate the average number of gene positions per gene family 
+#     per sub-genome across species
+#   - generate consensus cluster architectures using median 
+#     positions and majority gene family and strand
+#   - identify large intergenic gaps between consecutive genes
+#   - export the consensus data for manual plotting in BioRender
+#
 # Author: Reetta Pirttilahti
-
+#
 # ==========================================================
+
 
 library(dplyr)
 library(tidyr)
