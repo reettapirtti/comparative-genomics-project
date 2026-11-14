@@ -1,16 +1,10 @@
-library(treeio)
-library(ggtree)
-library(readxl)
-library(dplyr)
-
-
-
 # ==========================================================
 #
 # Generating Phylogenetic Tree Visuals
 #
-# This script creates a highlighted and labelled phylogenetic tree for easy 
-# visualization of previously identified and classified CBF gene clades. 
+# This script creates a highlighted and labelled phylogenetic tree for 
+# easy visualization of identified and classified CBF gene clades. 
+# 
 # Breakdown of the steps:
 #   - import a Newick tree generated in MEGA 12 and import gene family
 #     metadata 
@@ -23,6 +17,13 @@ library(dplyr)
 # Author: Reetta Pirttilahti
 #
 # ==========================================================
+
+
+
+library(treeio)
+library(ggtree)
+library(readxl)
+library(dplyr)
 
 
 
