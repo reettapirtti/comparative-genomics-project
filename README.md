@@ -17,17 +17,29 @@ The data has not been included in this repository for confidentiality reasons.
 
 ## repository-contents
 
+### ~phylogenetic-tree
+
+To exhibit the size of gene families and their relationships to known CBF genes, a neighbor-joining tree created in MEGA12 was imported into R as a Newick file and the visuals for the topology-only phylogenetic tree were created using the package ggtree. 
+
 #### ~consensus-gene-clusters: 
 
-The positional organization of gene families was found to be highly conserved within subgenomes across species. In order to visualize the structural conservation and variation between A, C, and D subgenome clusters, consensus values summarizing gene order, positions, strand orientation, and gene family were generated. The consensus data was used to manually plot genes on a vertical, scaled axis in BioRender to generate nice figures. 
+The positional organization of gene families was found to be highly conserved within subgenomes across species. In order to visualize the observed structural conservation and variation between A, C, and D subgenome clusters, consensus values summarizing gene order, positions, strand orientation, and gene family were generated. The consensus data was used to manually plot genes on a vertical, scaled axis in BioRender to generate nice figures. 
+
+#### ~copy-number-variation-(CNV)-and-functional-retention: 
+
+To determine whether gene family expansions or losses were biased among subgenomes or species, copy number variation and functional retention were quantified. The dataset for this summarized the number of functional and non-functional genes from each gene family per species per subgenome. Non-functional genes, or pseudogenes, were defined as sequences that were highly similar to their functional counterparts (<80% identity, and over <550bp in length), but their CDS was not intact. 
+
+### ~AP2-domain-and-disorder-regions
+
+
 
 #### ~gaps-and-intergenic-variation, statistical-analysis-and-data-handling: 
 
 While positional organization of genes was highly conserved, cluster length varied significantly both between species and between sub-genomes due to intergenic gap variation. To quantify and interpret these differences, metadata collected on gene position, orientation, and length, was used in RStudio. Statistical analyses: Kruskal–Wallis test, pairwise Wilcoxon rank-sum tests (post hoc), Spearman's rank correlation, and descriptive statistics (mean, standard deviation, coefficient of variation, minima/maxima, totals).
 
-#### ~copy number variation (CNV) and functional retention: 
 
-To determine whether gene family expansions or losses were biased among subgenomes or species, copy number variation and functional retention were quantified. The dataset for this summarized the number of functional and non-functional genes from each gene family per species per subgenome. Non-functional genes, or pseudogenes, were defined as sequences that were highly similar to their functional counterparts (<80% identity, and over <550bp in length), but their CDS was not intact. 
+
+
 
 *distribution of pseudogenes: 
 
