@@ -83,6 +83,7 @@ p2 <- ggtree(tree, layout = "fan", open.angle = 5, branch.length = "none") %<+% 
   geom_hilight(node = 470, fill = "orange", alpha = 0.3) +
   geom_hilight(node = 487, fill = "magenta", alpha = 0.3) 
 
-ggsave("p2_test.png", plot = p2, width = 12, height = 12, dpi = 600)
+ggsave("phylogenetic_tree.png", plot = p2, width = 12, height = 12, dpi = 600)
+
 
 
