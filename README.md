@@ -17,9 +17,22 @@ The data has not been included in this repository for confidentiality reasons.
 
 ## repository-contents
 
-### ~phylogenetic-tree
+### SEQUENCE ANALYSIS AND PHYLOGENETICS
 
-To exhibit the size of gene families and their relationships to known CBF genes, a neighbor-joining tree created in MEGA12 was imported into R as a Newick file and the visuals for the topology-only phylogenetic tree were created using the package ggtree. 
+#### ~phylogenetic-tree
+
+To exhibit the size of gene families and their relationships to known CBF genes, a neighbor-joining tree using translated full-length CBF gene sequences was created in MEGA12 and imported into R as a Newick file. The visuals for the topology-only phylogenetic tree were created using the package ggtree. 
+
+#### ~distances
+
+Translated CBF genes were aligned using ClustalW and pairwise distances were calculated in MEGA12. The results were processed in R to to assess sequence identity within and between gene families. CBF protein sequences within the same clade showed high sequence similarity (mean ≤82%), while genes in different clades exhibited lower identities ranging from 41-68%.
+
+#### ~AP2-domain-and-disorder-regions
+
+The predicted functionality of identified full-length CBF genes was further confirmed by the presence of a full-length AP2 domain. AP2 domain regions were extracted from 298 translated CBF genes by utilizing protein annotation data obtained using the software InterProScan and by utilizing the Rpackage Biostrings. Descriptive statistics were used to summarise AP2 domain lengths across the identified CBF proteins, including the mean, standard deviation, and coefficient of variation. 
+
+
+### STRUCTURAL ANALYSIS
 
 #### ~consensus-gene-clusters: 
 
@@ -29,28 +42,16 @@ The positional organization of gene families was found to be highly conserved wi
 
 To determine whether gene family expansions or losses were biased among subgenomes or species, copy number variation and functional retention were quantified. The dataset for this summarized the number of functional and non-functional genes from each gene family per species per subgenome. Non-functional genes, or pseudogenes, were defined as sequences that were highly similar to their functional counterparts (<80% identity, and over <550bp in length), but their CDS was not intact. 
 
-### ~AP2-domain-and-disorder-regions
-
-
-
 #### ~gaps-and-intergenic-variation, statistical-analysis-and-data-handling: 
 
 While positional organization of genes was highly conserved, cluster length varied significantly both between species and between sub-genomes due to intergenic gap variation. To quantify and interpret these differences, metadata collected on gene position, orientation, and length, was used in RStudio. Statistical analyses: Kruskal–Wallis test, pairwise Wilcoxon rank-sum tests (post hoc), Spearman's rank correlation, and descriptive statistics (mean, standard deviation, coefficient of variation, minima/maxima, totals).
 
+#### ~distribution-of-pseudogenes
 
+The distribution of CBF pseudogenes across the CBF clusters was observed to be non-random. To visualise this pattern and compare pseudogene locations across clusters of varying lengths, gene positions were normalised relative to the length of their respective clusters. The relative positions of non-functional CBF genes were then plotted across the subgenomes, with gene families distinguished by colour.  
 
+### PROMOTER ANALYSIS 
 
-
-*distribution of pseudogenes: 
+####
 
 *promoter region extraction: 
-
-##packages
-*dplyr
-*tidyr
-*writexl
-*readxl
-*tidyverse 
-*BiocManager
-*GenomicRanges 
-*Biostrings 
