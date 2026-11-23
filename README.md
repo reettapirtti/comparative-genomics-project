@@ -29,7 +29,7 @@ Translated CBF genes were aligned using ClustalW and pairwise distances were cal
 
 #### ~AP2-domain-and-disorder-regions
 
-The predicted functionality of identified full-length CBF genes was further confirmed by the presence of a full-length AP2 domain. AP2 domain regions were extracted from 298 translated CBF genes by utilizing protein annotation data obtained using the software InterProScan and by utilizing the Rpackage Biostrings. Descriptive statistics were used to summarise AP2 domain lengths across the identified CBF proteins, including the mean, standard deviation, and coefficient of variation. 
+The predicted functionality of identified full-length CBF genes was assessed by the presence of a full-length AP2 domain. AP2 domain regions were extracted from 298 translated CBF genes by utilizing protein annotation data obtained using the software InterProScan and by utilizing the Rpackage Biostrings. Descriptive statistics were used to summarise AP2 domain lengths across the identified CBF proteins, including the mean, standard deviation, and coefficient of variation. 
 
 
 ### STRUCTURAL ANALYSIS
