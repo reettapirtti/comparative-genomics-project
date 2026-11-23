@@ -52,6 +52,11 @@ The distribution of CBF pseudogenes across the CBF clusters was observed to be n
 
 ### PROMOTER ANALYSIS 
 
-####
+#### ~promoter-region-extraction 
 
-*promoter region extraction: 
+In RStudio, 1500bp of promoter sequence upstream of the start codon was extracted for each gene. The R package Biostrings was used for batch sequence manipulation and extraction. The 1500bp extracted region was separated into a putative core region for core promoter analysis (the last 300bp of the extraction) and a proximal/distal promoter
+region to search for binding sites for regulatory TFs (the first 1200bp). 
+
+#### ~promoter-motif-visualization
+
+Putative transcription factor binding site motifs within the extracted distal promoter regions were identified using FIMO, with motif databases obtained from JASPAR and PlantTFDB. The results were downloaded as TSV files and batch processed in Rstudio using the Rpackages Biostrings and IRanges. FIMO results were filtered by removing overlapping motif matches, retaining the most statistically significant hit (lowest p-value) and the longest motif length. Promoter motif schematics were generated in RStudio using the Rpackage gggenes.
