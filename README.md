@@ -1,12 +1,12 @@
-# comparative-genomics-project
-## general-overview
+# Comparative genomics project
+## General overview
 Independent comparative genomics analysis of CBF gene clusters in oat, developed as part of my Master's thesis: "Structural Evolution and Subgenome-Specific Divergence of CBF Gene Clusters in Wild and Cultivated Oat". I developed bioinformatics pipelines and performed statistical analyses of genomic datasets using RStudio.
 
 This repository is a portfolio of my skills in comparative genomic analysis.
 
 ---
 
-## overview-of-the-data 
+## Overview of the data 
 Around 1Mb size genomic regions containing CBF clusters from chromosome 5 of the A, C, and D subgenomes from 6 different species of oat: the tetraploid _Avena insularis_ (only containing the C and the D subgenomes), an old winter _Avena sativa_ cultivar, the Mediterranean _Avena byzantina_, a spring _Avena sativa_ cultivar cv. Sang, and two wild Turkish _Avena sterilis_: _Avena sterilis_ sp. TN4, and _A. sterilis_ sp. TN1. 
 
 The genomic regions were annotated for CBF genes in CLC Main Workbench for a total of 298 CBF genes with intact reading frames, and metadata on gene orientation, gene length, and gene location in the clusters was collected. Genes were grouped together into clades through iterative phylogenetic reconstruction and the gene families were named in accordance with reference sequences in the literature.  
