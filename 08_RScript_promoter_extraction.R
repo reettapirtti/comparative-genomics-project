@@ -22,9 +22,6 @@
 library(Biostrings)
 library(readxl)
 library(dplyr)
-library(gggenes)
-library(IRanges)
-library(writexl)
 
 
 
@@ -137,4 +134,5 @@ for (family_name in names(families)) {
     paste0("distal_promoters_", family_name, ".fasta")
   )
 }
+
 
